@@ -163,10 +163,10 @@ def get_argspec():
             type='dict' 
         ),
         facility=dict(
-            type='str' , choices=['kernel', 'user', 'mail', 'daemon', 'security-authorization', 'syslog', 'line-printer', 'news', 'uucp', 'cron', 'security-authorization-private', 'ftp', 'ntp', 'audit', 'alert', 'clock', 'local0', 'local1', 'local2', 'local3', 'local4', 'local5', 'local6', 'local7']
+            type='str', choices=['kernel', 'user', 'mail', 'daemon', 'security-authorization', 'syslog', 'line-printer', 'news', 'uucp', 'cron', 'security-authorization-private', 'ftp', 'ntp', 'audit', 'alert', 'clock', 'local0', 'local1', 'local2', 'local3', 'local4', 'local5', 'local6', 'local7']
         ),
         format=dict(
-            type='str' , choices=['binary', 'compact', 'custom', 'default', 'rfc5424', 'cef']
+            type='str', choices=['binary', 'compact', 'custom', 'default', 'rfc5424', 'cef']
         ),
         include_destination=dict(
             type='str' 
