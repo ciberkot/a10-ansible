@@ -1,0 +1,62 @@
+---
+- name: Create a10_slb_server instance
+  a10_slb_server:
+      a10_host: "{{ inventory_hostname }}"
+      a10_username: "{{ a10_username }}"
+      a10_password: "{{ a10_password }}"
+      a10_port: "{{ a10_port }}"
+      a10_protocol: "{{ a10_protocol }}"
+      host: 10.10.42.1
+      name: server1
+      port_list:
+        - protocol: "tcp"
+          port-number: 80
+          conn-limit: 1
+          health-check: "ping"
+        - protocol: "tcp"
+          port-number: 8080
+          conn-limit: 1
+          health-check: "ping"
+
+
+
+
+- name: Create a10_slb_server instance
+  a10_slb_server:
+      a10_host: "{{ inventory_hostname }}"
+      a10_username: "{{ a10_username }}"
+      a10_password: "{{ a10_password }}"
+      a10_port: "{{ a10_port }}"
+      a10_protocol: "{{ a10_protocol }}"
+      host: 10.10.42.2
+      name: server2
+      port_list:
+        - protocol: "tcp"
+          port-number: 80
+          conn-limit: 1
+          health-check: "ping"
+        - protocol: "tcp"
+          port-number: 8080
+          conn-limit: 1
+          health-check: "ping"
+
+- name: Create a10_slb_server instance
+  a10_slb_server:
+      a10_host: "{{ inventory_hostname }}"
+      a10_username: "{{ a10_username }}"
+      a10_password: "{{ a10_password }}"
+      a10_port: "{{ a10_port }}"
+      a10_protocol: "{{ a10_protocol }}"
+      host: 10.10.42.3
+      name: server3
+      port_list:
+        - protocol: "tcp"
+          port-number: 80
+          conn-limit: 1
+          health-check: "ping"
+        - protocol: "tcp"
+          port-number: 8080
+          conn-limit: 1
+          health-check: "ping"
+
+

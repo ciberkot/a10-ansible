@@ -1,0 +1,19 @@
+---
+- name: Create a10_slb_virtual_server_port instance
+  a10_slb_virtual_server_port:
+      a10_host: "{{ inventory_hostname }}"
+      a10_username: "{{ a10_username }}"
+      a10_password: "{{ a10_password }}"
+      a10_port: "{{ a10_port }}"
+      a10_protocol: "{{ a10_protocol }}"
+      virtual_server_name: "vip3"
+      port_number: 8080
+      protocol: http
+      conn_limit: 1
+      action: enable
+      def_selection_if_pref_failed: def-selection-if-pref-failed
+      stats_data_action: stats-data-enable
+      template_virtual_port: default
+      service_group: ANSIBLE-SG2
+ 
+

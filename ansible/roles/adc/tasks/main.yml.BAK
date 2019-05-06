@@ -1,0 +1,12 @@
+---
+- import_tasks: a10_slb_server.yaml
+- import_tasks: a10_slb_server_port.yaml
+- import_tasks: a10_slb_service_group.yaml
+- import_tasks: a10_slb_service_group_member.yaml
+- import_tasks: a10_slb_virtual_server.yaml
+- import_tasks: a10_slb_virtual_server.yaml
+- import_tasks: a10_slb_virtual_server_port.yaml
+
+
+
+
