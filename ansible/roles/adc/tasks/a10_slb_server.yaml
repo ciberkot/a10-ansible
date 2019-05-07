@@ -1,7 +1,7 @@
 ---
 - name: Create a10_slb_server 
   a10_slb_server:
-      a10_host: "{{ansible_host}}"
+      a10_host: "{{ inventory_hostname }}"
       a10_username: "{{ a10_username }}"
       a10_password: "{{ a10_password }}"
       a10_port: "{{ a10_port }}"
